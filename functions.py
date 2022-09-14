@@ -13,7 +13,7 @@ import nlpaug.augmenter.word as naw
 
 aug = naw.ContextualWordEmbsAug(model_path='bert-base-multilingual-uncased', aug_p=0.1)
 model_embed = SentenceTransformer('all-MiniLM-L6-v2')
-
+le = LabelEncoder()
 
 # some text cleaning functions
 def convert_to_lower(text):
@@ -115,7 +115,7 @@ def load_dataset(df):
 	# split into input and output elements
 	X, y_label = data['text'], data['label']
 	# label encode the target variable to have the classes 0 and 1
-	y = LabelEncoder().fit_transform(y_label)
+	y = le.fit_transform(y_label)
 	return X, y_label,y   
 def predict(file):
     """ Function to predict the classes for each entity using saved LinearSVC model
@@ -128,13 +128,15 @@ def predict(file):
     df_json_training= df_json.loc[df_json['source']== 'TRAINING',:]      # choose the training source and drop the workflow
     df_json_training_fr = df_json_training.loc[df_json_training['culture']=='fr-fr',:]          # choose the French culture
     df_cleaned = clean_data(df_json_training_fr)   # data preprocessing
-    X, y_test = load_dataset(df_cleaned)           # feature selection
+    print(df_cleaned)
+    X, y_test_label, y_test = load_dataset(df_cleaned)           # feature selection
     new_X_test= embed(X,model_embed)              # implement the embeddings for the new test dataset 
     filename = 'C:\\Users\\user\\Desktop\\AI projects\\nlp_project_files\\LinearSVC_model.sav'
               
     loaded_model = pickle.load(open(filename, 'rb'))    # load the saved model
     y_pred = loaded_model.predict(new_X_test)           # predict the classes
-    predicted_df = pd.DataFrame()                       # create a data frame that show the prediction result
+    predicted_df = pd.DataFrame() 
+    predicted_df['class']= y_test_label                      # create a data frame that show the prediction result
     predicted_df['y_test']= y_test
     predicted_df['y_pred']=y_pred
     
