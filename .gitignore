@@ -131,3 +131,4 @@ dmypy.json
 
 # ignore the data
 kone_classification.json
+augmented_dataset.csv
