@@ -62,7 +62,7 @@ def clean_data(df):
     parameters: dataframe
     return: dataframe  """
 
-    df['text'] = df['text'].apply(lambda x: convert_to_lower(x))
+    # df['text'] = df['text'].apply(lambda x: convert_to_lower(x))
     df['text'] = df['text'].apply(lambda x: remove_numbers(x))
     df['text'] = df['text'].apply(lambda x: remove_extra_white_spaces(x))
     df['text'] = df['text'].apply(lambda x: remove_special_char(x))
