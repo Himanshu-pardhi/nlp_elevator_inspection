@@ -10,7 +10,7 @@ This project is implemented based on Machine learning Models. Using a `LinearSVC
 
 * `functions.py`: All functions used to implement the `nlp.ipynb`.  
 
-* `app.py`: Scripts of streamlit application for deploying the model.  
+* `app_streamlit`: Folder that has the `app_linearsv.py`: the streamlit application for deploying the model.  
 
 * `requirements.txt`: file that has all packages for running program.
 
