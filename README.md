@@ -2,7 +2,7 @@
 
 
 ### Description  
-This project is implemented based on Machine learning Models. Using a `LinearSVC`, `Random Forest` and `Logistic Regrission` classifiers to predict the correct class for the given text.    
+This project is implemented based on Machine learning Models. Using a `LinearSVC`, `Random Forest` and `Logistic Regression` classifiers to predict the correct class for the given text.    
 
 ### Repo structure  
 
@@ -32,8 +32,8 @@ Follow these steps to run the program:
 
 1. Go to `nlp.ipynb` and load the dataset then run and follow the steps in the file.
 
-2. For deployment the web-application for this ML-Model with `streamlit` go to file `app.py`  
-in the terminal run this command `streamlit run app.py`.
+2. For deployment the web-application for this ML-Models with `streamlit` go to folder `app_streamlit` and run the file `app_linearsv.py`  
+in the terminal using command `streamlit run app_linearsv.py`.
 
 ![webapp](https://github.com/Himanshu-pardhi/nlp_elevator_inspection/blob/Rana/assets/streamlit1_img.png)
 
