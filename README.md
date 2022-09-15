@@ -16,7 +16,7 @@ This project is implemented based on Machine learning Models. Using a `LinearSVC
 
 
 ### Pipeline Review
-![webapp](Imbalance Multiclass Text Classification Structure)
+![workflow](assets\nlp_workflow.png)
 
 ### Installation
 #### step 1/ clone the repo
@@ -34,6 +34,8 @@ Follow these steps to run the program:
 
 2. For deployment the web-application for this ML-Model with `streamlit` go to file `app.py`  
 in the terminal run this command `streamlit run app.py`.
+
+![webapp](assets\streamlit1_img.png)
 
 
 ### Future Improvements  
