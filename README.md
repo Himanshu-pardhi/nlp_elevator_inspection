@@ -5,13 +5,15 @@
 This project is implemented based on Machine learning Model. Using a LinearSVC classifier to predict the correct class for the text given.    
 
 ### Repo structure  
-* `nlp.ipynb`: jupyter notebook file which has scripts and instructions on exploring the dataset, preprocessing, identifying the models and       training them
-* `functions.py`: All functions used to implement the `nlp.ipynb`.
+* `nlp.ipynb`: `jupyter notebook` file which has scripts and instructions on exploring the dataset, preprocessing, identifying the models and training them.  
+
+* `functions.py`: All functions used to implement the `nlp.ipynb`.  
+
 * `app.py`: Scripts of streamlit application for deploying the model.
 
 
 ### Pipeline Review
-![webapp](Yolo_model_structure)
+![webapp](Imbalance Multiclass Text Classification Structure)
 
 ### Installation
 #### step 1/ clone the repo
@@ -25,12 +27,15 @@ Use `pip install requirements.txt` for installation.
 ### Usage  
 Follow these steps to run the program:
 
-1. Go to `nlp.ipynb` Load the dataset and Run.
+1. Go to `nlp.ipynb` and load the dataset then run and follow the steps in the file.
+
+2. For deployment the web-application for this ML-Model with `streamlit` go to file `app.py`  
+in the terminal run this command `streamlit run app.py`.
 
 
-2. follow the instructions in `2_Training\README.md` for downloading and converting the
-`Pre-trained Weights`.
+### Future Improvements  
+1. Trian more data with several classes.  
+2. Train a Deep Learning Model.  
+3. Deploy the application to the server.
 
-
-### Future improvements
 
