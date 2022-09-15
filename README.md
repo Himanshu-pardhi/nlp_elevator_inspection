@@ -1,15 +1,18 @@
-# Imbalnce Multiclass Text Classification using Machine Learning Model
+# Imbalance Multiclass Text Classification using Machine Learning Models
 
 
 ### Description  
-This project is implemented based on Machine learning Model. Using a LinearSVC classifier to predict the correct class for the text given.    
+This project is implemented based on Machine learning Models. Using a `LinearSVC`, `Random Forest` and `Logistic Regrission` classifiers to predict the correct class for the given text.    
 
 ### Repo structure  
+
 * `nlp.ipynb`: `jupyter notebook` file which has scripts and instructions on exploring the dataset, preprocessing, identifying the models and training them.  
 
 * `functions.py`: All functions used to implement the `nlp.ipynb`.  
 
-* `app.py`: Scripts of streamlit application for deploying the model.
+* `app.py`: Scripts of streamlit application for deploying the model.  
+
+* `requirements.txt`: file that has all packages for running program.
 
 
 ### Pipeline Review
