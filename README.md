@@ -16,7 +16,7 @@ This project is implemented based on Machine learning Models. Using a `LinearSVC
 
 
 ### Pipeline Review
-![workflow](assets\nlp_workflow.png)
+![workflow](https://github.com/Himanshu-pardhi/nlp_elevator_inspection/blob/Rana/assets/nlp_workflow.png)
 
 ### Installation
 #### step 1/ clone the repo
@@ -35,7 +35,7 @@ Follow these steps to run the program:
 2. For deployment the web-application for this ML-Model with `streamlit` go to file `app.py`  
 in the terminal run this command `streamlit run app.py`.
 
-![webapp](assets\streamlit1_img.png)
+![webapp](https://github.com/Himanshu-pardhi/nlp_elevator_inspection/blob/Rana/assets/streamlit1_img.png)
 
 
 ### Future Improvements  
